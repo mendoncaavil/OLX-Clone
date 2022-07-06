@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="olx1.css">
+</head>
+<body>
+
+    <!-- ====================== * Navbar * ================================= -->
+
+    <div class="header">
+        <div class="navbar">
+
+
+            <img src="olx_logo.png" alt="OLX">
+
+
+
+
+            <div class="country_select" id="country"> 
+                <div class="select">
+                    <p id="text">Select Your Country</p>
+                    <i class="fa-solid fa-angle-down" id="moving"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Maharashtra')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Maharashtra</p>
+                     <li class="option" onclick="myfunction('Kerala')">
+                        <i class="fa-solid fa-location-dot"></i>   
+                        <p>Kerala</p>
+                    <li class="option" onclick="myfunction('Punjab')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <p>Punjab</p>
+                    <li class="option" onclick="myfunction('Goa')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <p>Goa</p>
+                    <li class="option" onclick="myfunction('Haryana')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <p>Haryana</p>
+
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchClass" id="searchID" placeholder="Find Cars, Mobile Phones and more... ">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+             
+
+
+            <div class="language">
+                <p id="eng_tag">English</p>
+
+                <ul class="hin_eng">
+                    <li onclick="languageolx('English')">English</li>
+                    <li onclick="languageolx('हिंदी')">हिंदी</li>
+                </ul>
+            </div>
+
+
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+            <div class="message">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div class="your_profile">
+                <div class="girl_img" id="girl_imgId">
+                    <img src="pic3.jpg">
+                </div>
+
+                <div class="dropdown" id="dropdownID">
+                 <div class="nameAndImg">
+                    <img src="pic3.jpg">
+                    <p>Madhuri Joshi</p>
+                 </div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cart-flatbed"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="sellingPage">
+                <button><i class="fa-solid fa-plus"></i> <p>SELL</p></button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        
+    </div>
+
+        <!-- ====================== * Advertisement 1 * ================================= -->
+
+
+        <div class="advImg">
+            <img src="ad1.jpg">
+            <i class="fa-solid fa-xmark" id="ad_icon"></i>
+        </div>
+
+        <!-- ====================== * Products* ================================= -->
+
+        <div class="product">
+            <div class="first_row">
+                <div class="box">
+                    <a href="product_olx.html"  target="_blank">
+                    <img src="product-1.jpg">
+                    <h2>₹ 3000</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                  </a>   
+                </div>  
+                   
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-2.jpg">
+                    <h2>₹ 12,000</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-3.jpg">
+                    <h2>₹ 15,000</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-4.jpg">
+                    <h2>₹ 30,00,000</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="first_row">
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-5.jpg">
+                    <h2>₹ 500</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>            
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-6.jpg">
+                    <h2>₹ 800</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-7.jpg">
+                    <h2>₹ 1,200</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-8.jpg">
+                    <h2>₹ 10,000</h2>
+                    <p>MI TV Stick</p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="first_row">
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-9.jpg">
+                    <h2>₹ 200</h2>
+                    <p>New Shirt    </p>
+                    <div class="adress_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>            
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-10.jpg">
+                    <h2>₹ 7,000</h2>
+                    <p>Fully automatic Washing machine</p>
+                    <div class="adress_data">
+                        <p>Ghatkopar, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-11.jpg">
+                    <h2>₹ 2,000</h2>
+                    <p>Adidas Shoes</p>
+                    <div class="adress_data">
+                        <p>Virar East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-12.jpg">
+                    <h2>₹ 9,000</h2>
+                    <p>Sofa</p>
+                    <div class="adress_data">
+                        <p>Vasai West, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="first_row">
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-13.jpg">
+                    <h2>₹ 5,00,000</h2>
+                    <p>Verna Car</p>
+                    <div class="adress_data">
+                        <p>Bhayander East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>            
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-14.jpg">
+                    <h2>₹ 5,999</h2>
+                    <p>Dining Table</p>
+                    <div class="adress_data">
+                        <p>Borivali East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-15.jpg">
+                    <h2>₹ 650</h2>
+                    <p>Watch</p>
+                    <div class="adress_data">
+                        <p>MiraRoad East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="product-16.jpg">
+                    <h2>₹ 1,500</h2>
+                    <p>Gym set</p>
+                    <div class="adress_data">
+                        <p>Dahisar East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+         <!-- ====================== * Load More * ================================= -->
+
+         <div class="load_more">
+            <button id="load_more_id"> Load more </button>
+
+            <div class="load_more_products" id="load_more_products_id">
+                <div class="first_row">
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-1.jpg">
+                        <h2>₹ 3000</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>            
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-2.jpg">
+                        <h2>₹ 12,000</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-3.jpg">
+                        <h2>₹ 15,000</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-4.jpg">
+                        <h2>₹ 30,00,000</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="first_row">
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-5.jpg">
+                        <h2>₹ 500</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>            
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-6.jpg">
+                        <h2>₹ 800</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-7.jpg">
+                        <h2>₹ 1,200</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a href="#"></a>
+                        <img src="product-8.jpg">
+                        <h2>₹ 10,000</h2>
+                        <p>MI TV Stick</p>
+                        <div class="adress_data">
+                            <p>Bandra East, Mumbai</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+            </div>
+
+         </div>
+
+
+         <!-- ====================== * Advertisement 2 * ================================= -->
+
+
+        <div class="adv_Img2">
+            <img src="ad2.jpg">
+            <i class="fa-solid fa-xmark" id="ad_icon2"></i>
+        </div>
+
+        <!-- ====================== * Download * ================================= -->
+
+        <div class="download_app">
+            <div class="download">
+                <img src="footar.jpg" class="imges">
+                <div class="text">
+                    <h1>TRY THE OLX APP</h1>
+                    <p>Buy, sell and find just about anything using <br>
+                        the app on your mobile.</p>
+                </div>
+                <div class="download_store">
+                    <p>GET YOUR APP TODAY  </p>
+                    <img src="play store.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================== * Footer * ================================= -->
+
+        <div class="main_footer">
+            <div class="footer">
+                <div class="footer_box">
+                    <h4>POPULAR LOCATIONS</h4>
+                    <p>Kolkata</p> 
+                    <p>Mumbai</p>
+                    <p>Chennai</p>
+                    <p>Pune</p>
+                </div>
+                <div class="footer_box">
+                    <h4>TRENDING LOCATIONS</h4>
+                    <p>Bhubaneshwar</p>
+                     <p> Hyderabad</p>
+                    <p> Chandigarh</p>
+                    <p> Nashik</p>
+                </div>
+                <div class="footer_box">
+                    <h4>ABOUT US</h4>
+                    <p>About OLX Group</p>
+                    <p> Careers</p>
+                    <p> Contact Us</p>
+                    <p> OLXPeople</p>
+                    <p> Waah Jobs</p>
+                </div>
+                <div class="footer_box">
+                    <h4>OLX</h4>
+                    <p>Help
+                    <p>Sitemap</p> 
+                    <p>Legal & Privacy information</p> 
+                    <p>Blog</p>
+                </div>
+            </div>
+        </div>
+
+
+    <script>
+
+// <!-- ====================== * Navbar * ================================= -->
+
+
+    let country = document.getElementById('country')
+    let moving = document.getElementById('moving')
+    let text = document.getElementById('text')
+    let list = document.getElementById('list')
+
+
+
+        country.addEventListener('click', ()=>{
+            list.classList.toggle('hidden');
+            moving.classList.toggle('rotate');
+        });
+
+
+        function myfunction (statename){
+            text.innerHTML = statename;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', ()=>{
+            hin_eng.classList.toggle('display_lang');    
+        });
+
+            function languageolx(anyOne){
+                eng_tag.innerHTML = anyOne;
+            }
+
+            let girl_imgId = document.getElementById('girl_imgId');
+            let dropdownID = document.getElementById('dropdownID');
+
+            girl_imgId.addEventListener('click', ()=>{
+                dropdownID.classList.toggle('block_div')
+            });
+
+            // <!-- ====================== * Advertisement 1 * ================================= -->
+
+
+            let advImg = document.querySelector('.advImg');
+            let ad_icon = document.getElementById('ad_icon');
+
+            ad_icon.addEventListener('click', ()=>{
+                advImg.style =  'display:none'; 
+            });
+
+
+        // <!-- ====================== * Load More Products * ================================= -->
+
+        let load_more_id = document.getElementById('load_more_id');
+        let load_more_products_id = document.getElementById('load_more_products_id');
+
+        load_more_id.addEventListener('click', ()=>{
+            load_more_products_id.style = 'display: block';
+            load_more_id.style = 'display: none';
+        })
+
+
+        // <!-- ====================== * Advertisement 2 * ================================= -->
+
+        let ad_icon2 = document.getElementById('ad_icon2');
+        let adv_Img2 = document.querySelector('.adv_Img2');
+
+        ad_icon2.addEventListener('click', ()=>{
+            adv_Img2.style = 'display:none';
+        });
+
+
+    </script>
+    
+</body>
+</html>

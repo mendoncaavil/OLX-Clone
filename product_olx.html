@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="product_olx.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+
+</head>
+<body>
+     <!-- ====================== * Navbar * ================================= -->
+
+    <div class="header">
+        <div class="navbar">
+
+
+            <img src="olx_logo.png" alt="OLX">
+
+
+
+
+            <div class="country_select" id="country"> 
+                <div class="select">
+                    <p id="text">Select Your Country</p>
+                    <i class="fa-solid fa-angle-down" id="moving"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Maharashtra')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Maharashtra</p>
+                     <li class="option" onclick="myfunction('Kerala')">
+                        <i class="fa-solid fa-location-dot"></i>   
+                        <p>Kerala</p>
+                    <li class="option" onclick="myfunction('Punjab')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <p>Punjab</p>
+                    <li class="option" onclick="myfunction('Goa')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <p>Goa</p>
+                    <li class="option" onclick="myfunction('Haryana')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        <p>Haryana</p>
+
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchClass" id="searchID" placeholder="Find Cars, Mobile Phones and more... ">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+             
+
+
+            <div class="language">
+                <p id="eng_tag">English</p>
+
+                <ul class="hin_eng">
+                    <li onclick="languageolx('English')">English</li>
+                    <li onclick="languageolx('हिंदी')">हिंदी</li>
+                </ul>
+            </div>
+
+
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+            <div class="message">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div class="your_profile">
+                <div class="girl_img" id="girl_imgId">
+                    <img src="pic3.jpg">
+                </div>
+
+                <div class="dropdown" id="dropdownID">
+                 <div class="nameAndImg">
+                    <img src="pic3.jpg">
+                    <p>Madhuri Joshi</p>
+                 </div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cart-flatbed"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="sellingPage">
+                <button><i class="fa-solid fa-plus"></i> <p>SELL</p></button>
+            </div>
+
+        </div>
+        
+    </div>
+
+        <!-- ====================== * Advertisement 1 * ================================= -->
+
+
+        <div class="adv_Img2">
+            <img src="ad2.jpg">
+            <i class="fa-solid fa-xmark" id="ad_icon2"></i>
+        </div>
+
+        <!-- ====================== * Product Display * ================================= -->
+
+    <div class="product_img">
+        <div class="img_discription">
+                <div class="swiper">
+            <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="pro_1.jpg" ></div>
+      <div class="swiper-slide"><img src="pro_2.jpg" ></div>
+      <div class="swiper-slide"><img src="pro_3.jpg" ></div>
+      <div class="swiper-slide"><img src="pro_4.jpg" ></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-button-prev" id="prev"></div>
+    <div class="swiper-button-next" id="next"></div>
+
+  </div>
+
+    <div class="description">
+        <h3>
+            Description
+        </h3>
+        <p>
+            Fire TV stick is a perfect device for people who don't have a smart tv at thier home.
+
+            4K quality is the best video output available till date and amazon is the best manufacturer of it and is leading the industry.
+        </p>
+
+    </div>
+
+        </div>
+
+        <div class="product_details">
+            <div class="box">
+                <div class="price">
+                    <h3>₹ 3,500</h3>
+                    <div>
+                       <p>
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-heart"></i>                    
+                       </p> 
+                    </div>
+                </div>
+                <span>MI TV Stick</span>
+                <div class="location">
+                    <p>Ghatkopar West, Mumbai, Maharashtra</p>
+                    <p>Today</p>
+                </div>
+            </div>
+
+            <div class="box" id="box2">
+                <p class="seller_description"> Seller description  </p>
+                <div class="seller_details">
+                    <img src="pic2.jpg" >
+                    <div>
+                        <h2> Parth Todankar</h2>
+                        <p>Member since May 2021</p>
+                    </div>
+                </div>
+                <a href="olx_chatbox.html" target="_blank">Chat with seller </a>
+            </div>
+
+            <div class="box" id="box3">
+               <h2>Posted in</h2>
+               <p>Gokuldham, Mumbai, Maharashtra</p>
+               <img src="location.png" >
+            </div>
+
+        </div>
+
+    </div>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ <script>
+    // <!-- ====================== * Navbar * ================================= -->
+
+
+    let country = document.getElementById('country')
+    let moving = document.getElementById('moving')
+    let text = document.getElementById('text')
+    let list = document.getElementById('list')
+
+
+
+        country.addEventListener('click', ()=>{
+            list.classList.toggle('hidden');
+            moving.classList.toggle('rotate');
+        });
+
+
+        function myfunction (statename){
+            text.innerHTML = statename;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', ()=>{
+            hin_eng.classList.toggle('display_lang');    
+        });
+
+            function languageolx(anyOne){
+                eng_tag.innerHTML = anyOne;
+            }
+
+            let girl_imgId = document.getElementById('girl_imgId');
+            let dropdownID = document.getElementById('dropdownID');
+
+            girl_imgId.addEventListener('click', ()=>{
+                dropdownID.classList.toggle('block_div')
+            });
+
+        // <!-- ====================== * Advertisement 1 * ================================= -->
+
+        let ad_icon2 = document.getElementById('ad_icon2');
+        let adv_Img2 = document.querySelector('.adv_Img2');
+
+        ad_icon2.addEventListener('click', ()=>{
+            adv_Img2.style = 'display:none';
+        });
+
+
+            // <!-- ====================== * Product Display * ================================= -->
+
+
+
+        const swiper = new Swiper('.swiper', {
+         
+          
+        loop: true,
+
+         pagination: {
+         el: '.swiper-pagination',
+          },
+
+           navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+ 
+       });
+
+
+
+
+
+</script>
+
+
+
+
+
+       
+</body>
+</html>
